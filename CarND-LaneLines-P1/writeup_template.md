@@ -17,7 +17,7 @@ The goals / steps of this project are the following:
 
 [gray-scale-image]: ./test_images_output/gray-scale/solidWhiteCurve.jpg
 
-[gray-scale-with-Guassina-Blur-image]: ./test_images_output/gray-scaleGB/solidWhiteCurve.jpg
+[gray-scale-with-Guassina-Blur-image]: ./test_images_output/gray-scaleGB/solidWhiteCurve.jpg "Grayscale"
 
 [edges-image]: ./test_images_output/edges/solidWhiteCurve.jpg
 
@@ -43,7 +43,7 @@ My pipeline consisted of 6 steps.
 
 1. First I converted the images to grascale. 
 
-![alt text][gray-scale-image]{:height="36px" width="36px"}
+![alt text][gray-scale-image]{:height="36px" width="36px"}.
 
 2. Then I applied a Gaussian blur to the provided image using cv2.GaussianBlur method. 
 
