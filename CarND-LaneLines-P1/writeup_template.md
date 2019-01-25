@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
 
-[gray-scale-image]: ./test_images_output/gray-scale/solidWhiteCurve.jpg =100x20
+[gray-scale-image]: ./test_images_output/gray-scale/solidWhiteCurve.jpg "=100x20"
 
 [gray-scale-with-Guassina-Blur-image]: ./test_images_output/gray-scaleGB/solidWhiteCurve.jpg
 
