@@ -33,25 +33,25 @@ My pipeline consisted of 6 steps.
 
 1. First I converted the images to grascale. 
 
-![gray-scale image][./test_images_output/gray-scale/solidWhiteCurve.jpg]
+[gray-scale image]: ./test_images_output/gray-scale/solidWhiteCurve.jpg
 
 2. Then I applied a Gaussian blur to the provided image using cv2.GaussianBlur method. 
 
-![gray-scale with Guassina Blur image][./test_images_output/gray-scaleGB/solidWhiteCurve.jpg]
+[gray-scale with Guassina Blur image]: ./test_images_output/gray-scaleGB/solidWhiteCurve.jpg
 
 3. Third, I used a Canny transformation to find edges on the blured image. 
 
-![edges image][./test_images_output/edges/solidWhiteCurve.jpg]
+[edges image]: ./test_images_output/edges/solidWhiteCurve.jpg
 
 4. Next, aftering getting edges, I eliminated parts of image which were not intersting in regards to the lane line detection. 
 
-![edges with mark image][./test_images_output/edgesWithMask/solidWhiteCurve.jpg]
+[edges with mark image]: ./test_images_output/edgesWithMask/solidWhiteCurve.jpg
 
 5. Then, I used a Hough transformation to find the lines on the masked image.
 
 6. Last but not least, I merged the output of the previous step with the original image to draw the lines on it.
 
-![result image][./test_images_output/results/solidWhiteCurve.jpg]
+[result image]: ./test_images_output/results/solidWhiteCurve.jpg
 
 To average and interpolate the lines on the draw_lines function, I try to find the lines going on the left and right side of the image. Each point of those sides were accumulated and first degree polynomial was fit to those points using numpy.polyfit. When the line equation was found, it was evaluated on the region of interest to define the points where the line would be shown on the image.
 
