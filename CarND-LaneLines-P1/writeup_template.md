@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 
 [gray-scale-with-Guassina-Blur-image]: ./test_images_output/gray-scaleGB/solidWhiteCurve.jpg
 
-[edges-image]: ./test_images_output/edges/solidWhiteCurve.jpg=250x250
+[edges-image]: ./test_images_output/edges/solidWhiteCurve.jpg=10x10
 
 [edges-with-mark-image]: ./test_images_output/edgesWithMask/solidWhiteCurve.jpg
 
