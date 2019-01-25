@@ -1,77 +1,39 @@
-# **Finding Lane Lines on the Road** 
+# **Udacity Self-Driving Car Nanodegree**
 
-## Writeup 
+## **Porject 1: Finding Lane Lines on the Road** 
+
+### Introduce
 
 ---
 
 **Finding Lane Lines on the Road**
 
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
-
-
-[//]: # (Image References)
-
-[gray-scale-image]: ./test_images_output/gray-scale/solidWhiteCurve.jpg
-
-[gray-scale-with-Guassina-Blur-image]: ./test_images_output/gray-scaleGB/solidWhiteCurve.jpg
-
-[edges-image]: ./test_images_output/edges/solidWhiteCurve.jpg=10x10
-
-[edges-with-mark-image]: ./test_images_output/edgesWithMask/solidWhiteCurve.jpg
-
-[result-image]: ./test_images_output/results/solidWhiteCurve.jpg
+The goal of this project is to find lane lines on the road on either images or videos. [Project Introduction](./Project-Introduction.md) pervides more details of this project.
 
 ---
 
-### Reflection
+### Environment requirements
 
-### 1. Describe my pipeline. 
+I finished this project on jupyter notebook which can be easily used aftering installing Anaconda.
 
+Several python packages are need. 
 
-My pipeline consisted of 6 steps.
+1. matplotlib
 
-1. First I converted the images to grascale. 
+2. numpy
 
-![alt text][gray-scale-image]
+3. opencv
 
-2. Then I applied a Gaussian blur to the provided image using cv2.GaussianBlur method. 
+4. moviepy
 
-![alt text][gray-scale-with-Guassina-Blur-image]
+5. HTML
 
-3. Third, I used a Canny transformation to find edges on the blured image. 
+Some of them may already embed in Anaconda once you install it, others may need to be installed manually. But overall, it is easy to achieve using Anaconda.
 
-![alt text][edges-image]
+### Description of my pipeline. 
 
-4. Next, aftering getting edges, I eliminated parts of image which were not intersting in regards to the lane line detection. 
+You can find description of my method in [writeup](./writeup.md).
 
-![alt text][edges-with-mark-image]
+Code is in [P1.ipynb](./P1.ipynb) file.
 
-5. Then, I used a Hough transformation to find the lines on the masked image.
-
-6. Last but not least, I merged the output of the previous step with the original image to draw the lines on it.
-
-![alt text][result-image]
-
-To average and interpolate the lines on the draw_lines function, I try to find the lines going on the left and right side of the image. Each point of those sides were accumulated and first degree polynomial was fit to those points using numpy.polyfit. When the line equation was found, it was evaluated on the region of interest to define the points where the line would be shown on the image.
-
-
-### 2. Identify potential shortcomings with your current pipeline
-
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
-The lines shake a lot on the videos, a better way to average them should be possible.
-
-### 3. Suggest possible improvements to your pipeline
-
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
-
-The line size should be improved.
-
-Bright points outside the lines were taking into account.
+Also you can find my results in [test images ouput](./test_images_output) folder and in [test videos output](./test_videos_output) folder.
