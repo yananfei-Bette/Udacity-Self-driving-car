@@ -13,8 +13,6 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
 [gray-scale-image]: ./test_images_output/gray-scale/solidWhiteCurve.jpg
 
 [gray-scale-with-Guassina-Blur-image]: ./test_images_output/gray-scaleGB/solidWhiteCurve.jpg
@@ -31,13 +29,6 @@ The goals / steps of this project are the following:
 
 ### 1. Describe my pipeline. 
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
 
 My pipeline consisted of 6 steps.
 
