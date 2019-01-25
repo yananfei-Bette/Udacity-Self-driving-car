@@ -37,13 +37,13 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1 =100x20]
+![alt text][image1]
 
 My pipeline consisted of 6 steps.
 
 1. First I converted the images to grascale. 
 
-![alt text][gray-scale-image]
+![alt text][gray-scale-image]{:height="36px" width="36px"}
 
 2. Then I applied a Gaussian blur to the provided image using cv2.GaussianBlur method. 
 
