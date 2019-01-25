@@ -8,7 +8,7 @@
 
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
-* Reflect on work in a written report
+* Reflect on your work in a written report
 
 
 [//]: # (Image References)
@@ -54,17 +54,24 @@ My pipeline consisted of 6 steps.
 
 ![alt text][result-image]
 
-I also rewrote the draw_lines function. I tried to find the left lines and right lines in the image and average them to get clear lines. First, according to slope of any two points, I seperated points into two sets. Each set was formed either left lines or right lines. Then I used polyfit function in numpy to get coefficients of linear equation on each set. Next I drawed those linear lines on the image.
+To average and interpolate the lines on the draw_lines function, I try to find the lines going on the left and right side of the image. Each point of those sides were accumulated and first degree polynomial was fit to those points using numpy.polyfit. When the line equation was found, it was evaluated on the region of interest to define the points where the line would be shown on the image.
 
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-One potential shortcoming would be sometime it would be difficult to draw lines on dotted lines especially on unclear dotted lines.
 
-Another shortcoming is in videos, lines shake a lot especially when the car was changing directions even a little.
+One potential shortcoming would be what would happen when ... 
+
+Another shortcoming could be ...
+
+The lines shake a lot on the videos, a better way to average them should be possible.
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be enlarge kernel size in guassian blur function, in order to remove noise in video or in image. But it is a trade-off thing, because we want to enhance lane lines but blur the noise things.
+A possible improvement would be to ...
 
-Another potential improvement could be to change a fixed mask into a flexible mask, or use a non-linear function to draw lines, like draw a curve. But the shortcoming is it would improve time consuming.
+Another potential improvement could be to ...
+
+The line size should be improved.
+
+Bright points outside the lines were taking into account.
