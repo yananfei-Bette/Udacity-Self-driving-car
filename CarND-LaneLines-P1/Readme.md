@@ -14,7 +14,7 @@ The goal of this project is to find lane lines on the road on either images or v
 
 ### Environment requirements
 
-I finished this project on jupyter notebook which can be easily used aftering installing Anaconda.
+I finished this project on jupyter notebook which can be easily used aftering installing Anaconda. I used Python 3.6.
 
 Several python packages are needed. 
 
@@ -24,9 +24,11 @@ Several python packages are needed.
 
 3. opencv
 
-4. moviepy
+4. imageio
 
-5. HTML
+5. moviepy
+
+6. HTML
 
 Some of them may be already embeded in Anaconda once you install it, others may need to be installed manually. But overall, it is easy to achieve using Anaconda.
 
