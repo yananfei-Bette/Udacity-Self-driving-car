@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
 
-[gray-scale-image]: ./test_images_output/gray-scale/solidWhiteCurve.jpg
+[gray-scale-image]: ./test_images_output/gray-scale/solidWhiteCurve.jpg =100x20
 
 [gray-scale-with-Guassina-Blur-image]: ./test_images_output/gray-scaleGB/solidWhiteCurve.jpg
 
@@ -37,7 +37,7 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1 =100x20]
+![alt text][image1]
 
 My pipeline consisted of 6 steps.
 
