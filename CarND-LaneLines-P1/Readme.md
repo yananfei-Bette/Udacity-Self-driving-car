@@ -32,8 +32,8 @@ Some of them may be already embeded in Anaconda once you install it, others may 
 
 ### Description of my pipeline. 
 
-You can find description of my method in [writeup](./writeup.md).
+You can find the description of my method in [writeup](./writeup.md).
 
-Code is in [P1.ipynb](./P1.ipynb) file.
+Code is in the [P1.ipynb](./P1.ipynb) file.
 
 Also you can find my results in [test images ouput](./test_images_output) folder and in [test videos output](./test_videos_output) folder.
