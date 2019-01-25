@@ -15,6 +15,8 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
 
+[gray-scale-image]: ./test_images_output/gray-scale/solidWhiteCurve.jpg
+
 ---
 
 ### Reflection
@@ -33,7 +35,7 @@ My pipeline consisted of 6 steps.
 
 1. First I converted the images to grascale. 
 
-[gray-scale image]: ./test_images_output/gray-scale/solidWhiteCurve.jpg
+![alt text][gray-scale-image]
 
 2. Then I applied a Gaussian blur to the provided image using cv2.GaussianBlur method. 
 
